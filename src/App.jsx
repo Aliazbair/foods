@@ -253,13 +253,49 @@ function App() {
             className='shadow-sm shadow-gray-800 cursor-pointer rounded-md p-2 flex flex-col items-center justify-center hover:scale-105 transition-all duration-300'
           >
             <img src={image} alt={name} />
-            <h2 className='text-sm md:text-2xl font-mono text-gray-500'>{name}</h2>
+            <h2 className='text-sm md:text-2xl font-mono text-gray-500'>
+              {name}
+            </h2>
           </div>
         ))}
       </div>
       {/* <Routes>
         <Route path='/home' element={<Home />} />
       </Routes> */}
+
+      <div className='container max-w-7xl mx-auto px-10 py-10'>
+        <h2 className='text-center  py-2 text-4xl font-bold text-red-400'>
+          All Foods List
+        </h2>
+
+        <div className='grid  gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 '>
+          {data.map(({ id, name, category, image, price }) => (
+            <div key={id} className='shadow-md rounded-br-xl relative'>
+              <img
+                src={image}
+                alt=''
+                className='w-full h-60 rounded object-cover'
+              />
+              <h5 className='text-lg text-gray-200 bg-green-700 absolute top-0 rounded-l px-5 '>
+                {category}
+              </h5>
+
+              <div className='p-2'>
+                <h2>{name}</h2>
+
+                <div className='flex  items-center justify-between py-3 '>
+                  <button className='text-lg text-gray-100 bg-indigo-700  px-1 rounded'>
+                    Add To card
+                  </button>
+                  <span className='text-green-500 font-bold font-mono'>
+                    {price}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
