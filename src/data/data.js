@@ -220,3 +220,63 @@ export const Links = [
     icon: <FaUserFriends size={25} className='mr-4 text-orange-500' />,
   },
 ];
+
+
+
+export const Pizza = [
+  {
+    name: "Papa John's",
+    location: '111 First St, Anytown USA',
+    menu: [
+      {
+        name: 'Large Pepperoni Pizza',
+        price: '$14.99',
+      },
+      {
+        name: 'Large Supreme Pizza',
+        price: '$16.99',
+      },
+      {
+        name: 'Large Cheese Pizza',
+        price: '$12.99',
+      },
+    ],
+  },
+  {
+    name: "Domino's",
+    location: '222 Second St, Anytown USA',
+    menu: [
+      {
+        name: "Large Meat Lover's Pizza",
+        price: '$16.99',
+      },
+      {
+        name: 'Large Deluxe Pizza',
+        price: '$18.99',
+      },
+      {
+        name: 'Large Cheese Pizza',
+        price: '$14.99',
+      },
+    ],
+  },
+  {
+    name: "Papa Murphy's",
+    location: '333 Third St, Anytown USA',
+    menu: [
+      {
+        name: 'Large Pepperoni Pizza',
+        price: '$10.99',
+      },
+      {
+        name: 'Large Deluxe Pizza',
+        price: '$12.99',
+      },
+      {
+        name: 'Large Cheese Pizza',
+        price: '$8.99',
+      },
+    ],
+  },
+];
+
