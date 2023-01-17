@@ -253,7 +253,7 @@ function App() {
             className='shadow-sm shadow-gray-800 cursor-pointer rounded-md p-2 flex flex-col items-center justify-center hover:scale-105 transition-all duration-300'
           >
             <img src={image} alt={name} />
-            <h2 className='text-2xl font-mono text-gray-500'>{name}</h2>
+            <h2 className='text-sm md:text-2xl font-mono text-gray-500'>{name}</h2>
           </div>
         ))}
       </div>
